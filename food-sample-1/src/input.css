@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "inter";
+    src: url("../public/font/inter/static/Inter-VariableFont_opsz,wght.ttf")
+        format("truetype");
+}
+
+@font-face {
+    font-family: "interBold";
+    src: url("../public/font/inter/static/Inter_18pt-Bold.ttf");
+}
+
+@font-face {
+    font-family: "interLight";
+    src: url("../public/font/inter/static/Inter_18pt-Light.ttf");
+}
+
+@font-face {
+    font-family: "readexPro";
+    src: url("../public/font/readex-pro/ReadexPro-VariableFont_HEXP\,wght.ttf");
+}
+
+@theme {
+    --font-readex: "readexPro", sans-serif;
+    --font-inter: "inter", sans-serif;
+    --color-hero-light: #fff9ea;
+    --color-primary: #ffcb45;
+    --breakpoint-mobile: 20rem;
+}
+
+@layer utilities {
+    .active-navbar {
+        @apply font-medium before:scale-100;
+    }
+
+    .navbar-sticky {
+        @apply bg-white shadow-[0_0.1rem_1rem_rgba(0,0,0,0.2)];
+    }
+
+    .scrollbar-none {
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* Internet Explorer 10+ */
+    }
+    .scrollbar-none::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera */
+    }
+}
