@@ -474,8 +474,12 @@
             </section>
 
             <!-- About us Custommer -->
-            <section class="flex justify-center gap-[100px] ps-[10%]">
-                <div class="flex flex-2 justify-end">
+            <section
+                class="mobile:mt-[1200px] flex flex-wrap justify-center gap-[100px] ps-[10%] md:mt-[200px] md:flex-col lg:mt-[200px] lg:flex-row"
+            >
+                <div
+                    class="mobile:justify-center flex flex-2 md:justify-center lg:justify-end"
+                >
                     <img
                         src="../public/decoration/gallery.png"
                         width="431"
@@ -489,11 +493,11 @@
                         What the Say
                     </h2>
                     <h1
-                        class="font-inter mt-[7px] w-[481px] text-[30px] font-bold text-black"
+                        class="font-inter mobile:w-[350px] mt-[7px] text-[30px] font-bold text-black md:w-[481px] lg:w-[481px]"
                     >
                         What Our Customers Say About Us
                     </h1>
-                    <div class="w-[567px]">
+                    <div class="mobile:w-[380px] md:w-[567px] lg:w-[567px]">
                         <div
                             id="scrollContainer"
                             class="scrollbar-none grid cursor-grab snap-x snap-mandatory grid-flow-col gap-[24px] overflow-y-auto overscroll-x-contain scroll-auto transition-all duration-150 ease-in-out"

@@ -75,6 +75,8 @@ Array.from(bullets).forEach((bullet, index) => {
         Array.from(bullets).forEach((b) => b.classList.remove("active"));
         bullet.classList.add("active");
     });
+
+    bullet.classList.add("cursor-pointer");
 });
 
 // Update bullet when scroll

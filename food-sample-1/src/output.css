@@ -453,6 +453,9 @@
   .cursor-grabbing {
     cursor: grabbing;
   }
+  .cursor-pointer {
+    cursor: pointer;
+  }
   .resize {
     resize: both;
   }
@@ -512,6 +515,9 @@
   }
   .gap-\[100px\] {
     gap: 100px;
+  }
+  .gap-\[1300px\] {
+    gap: 1300px;
   }
   .self-center {
     align-self: center;
@@ -847,6 +853,31 @@
       margin-top: 700px;
     }
   }
+  .mobile\:mt-\[1000px\] {
+    @media (width >= 20rem) {
+      margin-top: 1000px;
+    }
+  }
+  .mobile\:mt-\[1200px\] {
+    @media (width >= 20rem) {
+      margin-top: 1200px;
+    }
+  }
+  .mobile\:mt-\[1300px\] {
+    @media (width >= 20rem) {
+      margin-top: 1300px;
+    }
+  }
+  .mobile\:mt-\[1400px\] {
+    @media (width >= 20rem) {
+      margin-top: 1400px;
+    }
+  }
+  .mobile\:mt-\[1500px\] {
+    @media (width >= 20rem) {
+      margin-top: 1500px;
+    }
+  }
   .mobile\:hidden {
     @media (width >= 20rem) {
       display: none;
@@ -855,6 +886,21 @@
   .mobile\:w-\[250px\] {
     @media (width >= 20rem) {
       width: 250px;
+    }
+  }
+  .mobile\:w-\[350px\] {
+    @media (width >= 20rem) {
+      width: 350px;
+    }
+  }
+  .mobile\:w-\[380px\] {
+    @media (width >= 20rem) {
+      width: 380px;
+    }
+  }
+  .mobile\:w-\[400px\] {
+    @media (width >= 20rem) {
+      width: 400px;
     }
   }
   .mobile\:w-full {
@@ -917,14 +963,44 @@
       margin-top: 120px;
     }
   }
+  .md\:mt-\[200px\] {
+    @media (width >= 48rem) {
+      margin-top: 200px;
+    }
+  }
+  .md\:mt-\[700px\] {
+    @media (width >= 48rem) {
+      margin-top: 700px;
+    }
+  }
   .md\:w-\[400px\] {
     @media (width >= 48rem) {
       width: 400px;
     }
   }
+  .md\:w-\[481px\] {
+    @media (width >= 48rem) {
+      width: 481px;
+    }
+  }
+  .md\:w-\[567px\] {
+    @media (width >= 48rem) {
+      width: 567px;
+    }
+  }
+  .md\:flex-col {
+    @media (width >= 48rem) {
+      flex-direction: column;
+    }
+  }
   .md\:justify-center {
     @media (width >= 48rem) {
       justify-content: center;
+    }
+  }
+  .md\:justify-end {
+    @media (width >= 48rem) {
+      justify-content: flex-end;
     }
   }
   .md\:gap-\[153px\] {
@@ -947,6 +1023,16 @@
       margin-top: 120px;
     }
   }
+  .lg\:mt-\[200px\] {
+    @media (width >= 64rem) {
+      margin-top: 200px;
+    }
+  }
+  .lg\:mt-\[700px\] {
+    @media (width >= 64rem) {
+      margin-top: 700px;
+    }
+  }
   .lg\:block {
     @media (width >= 64rem) {
       display: block;
@@ -962,14 +1048,29 @@
       width: 40%;
     }
   }
+  .lg\:w-\[481px\] {
+    @media (width >= 64rem) {
+      width: 481px;
+    }
+  }
   .lg\:w-\[500px\] {
     @media (width >= 64rem) {
       width: 500px;
     }
   }
+  .lg\:w-\[567px\] {
+    @media (width >= 64rem) {
+      width: 567px;
+    }
+  }
   .lg\:flex-row {
     @media (width >= 64rem) {
       flex-direction: row;
+    }
+  }
+  .lg\:justify-end {
+    @media (width >= 64rem) {
+      justify-content: flex-end;
     }
   }
   .lg\:justify-start {
