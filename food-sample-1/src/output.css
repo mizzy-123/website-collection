@@ -305,6 +305,9 @@
   .grid {
     display: grid;
   }
+  .hidden {
+    display: none;
+  }
   .size-\[24px\] {
     width: 24px;
     height: 24px;
@@ -312,6 +315,18 @@
   .size-\[46px\] {
     width: 46px;
     height: 46px;
+  }
+  .size-\[50px\] {
+    width: 50px;
+    height: 50px;
+  }
+  .size-\[100px\] {
+    width: 100px;
+    height: 100px;
+  }
+  .size-\[1000px\] {
+    width: 1000px;
+    height: 1000px;
   }
   .h-2 {
     height: calc(var(--spacing) * 2);
@@ -357,6 +372,9 @@
   }
   .w-\[167px\] {
     width: 167px;
+  }
+  .w-\[200px\] {
+    width: 200px;
   }
   .w-\[233px\] {
     width: 233px;
@@ -437,6 +455,9 @@
   }
   .justify-center {
     justify-content: center;
+  }
+  .justify-end {
+    justify-content: flex-end;
   }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
@@ -560,6 +581,9 @@
   }
   .text-center {
     text-align: center;
+  }
+  .text-end {
+    text-align: end;
   }
   .font-inter {
     font-family: var(--font-inter);
@@ -744,6 +768,36 @@
       }
     }
   }
+  .mobile\:absolute {
+    @media (width >= 20rem) {
+      position: absolute;
+    }
+  }
+  .mobile\:top-\[5px\] {
+    @media (width >= 20rem) {
+      top: 5px;
+    }
+  }
+  .mobile\:top-\[50\%\] {
+    @media (width >= 20rem) {
+      top: 50%;
+    }
+  }
+  .mobile\:top-\[100\%\] {
+    @media (width >= 20rem) {
+      top: 100%;
+    }
+  }
+  .mobile\:bottom-0 {
+    @media (width >= 20rem) {
+      bottom: calc(var(--spacing) * 0);
+    }
+  }
+  .mobile\:left-0 {
+    @media (width >= 20rem) {
+      left: calc(var(--spacing) * 0);
+    }
+  }
   .mobile\:col-span-2 {
     @media (width >= 20rem) {
       grid-column: span 2 / span 2;
@@ -762,6 +816,11 @@
   .mobile\:mt-\[1200px\] {
     @media (width >= 20rem) {
       margin-top: 1200px;
+    }
+  }
+  .mobile\:block {
+    @media (width >= 20rem) {
+      display: block;
     }
   }
   .mobile\:flex {
@@ -809,6 +868,11 @@
       flex-direction: column;
     }
   }
+  .mobile\:items-start {
+    @media (width >= 20rem) {
+      align-items: flex-start;
+    }
+  }
   .mobile\:justify-center {
     @media (width >= 20rem) {
       justify-content: center;
@@ -827,6 +891,26 @@
   .mobile\:gap-\[120px\] {
     @media (width >= 20rem) {
       gap: 120px;
+    }
+  }
+  .mobile\:bg-white {
+    @media (width >= 20rem) {
+      background-color: var(--color-white);
+    }
+  }
+  .mobile\:px-\[3\%\] {
+    @media (width >= 20rem) {
+      padding-inline: 3%;
+    }
+  }
+  .mobile\:px-\[10\%\] {
+    @media (width >= 20rem) {
+      padding-inline: 10%;
+    }
+  }
+  .mobile\:py-\[1rem\] {
+    @media (width >= 20rem) {
+      padding-block: 1rem;
     }
   }
   .mobile\:pt-\[100px\] {
@@ -854,6 +938,126 @@
       font-size: 30px;
     }
   }
+  .mobile\:before\:absolute {
+    @media (width >= 20rem) {
+      &::before {
+        content: var(--tw-content);
+        position: absolute;
+      }
+    }
+  }
+  .mobile\:before\:bottom-\[-5px\] {
+    @media (width >= 20rem) {
+      &::before {
+        content: var(--tw-content);
+        bottom: -5px;
+      }
+    }
+  }
+  .mobile\:before\:left-0 {
+    @media (width >= 20rem) {
+      &::before {
+        content: var(--tw-content);
+        left: calc(var(--spacing) * 0);
+      }
+    }
+  }
+  .mobile\:before\:h-\[3px\] {
+    @media (width >= 20rem) {
+      &::before {
+        content: var(--tw-content);
+        height: 3px;
+      }
+    }
+  }
+  .mobile\:before\:w-full {
+    @media (width >= 20rem) {
+      &::before {
+        content: var(--tw-content);
+        width: 100%;
+      }
+    }
+  }
+  .mobile\:before\:scale-0 {
+    @media (width >= 20rem) {
+      &::before {
+        content: var(--tw-content);
+        --tw-scale-x: 0%;
+        --tw-scale-y: 0%;
+        --tw-scale-z: 0%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
+    }
+  }
+  .mobile\:before\:bg-primary {
+    @media (width >= 20rem) {
+      &::before {
+        content: var(--tw-content);
+        background-color: var(--color-primary);
+      }
+    }
+  }
+  .mobile\:before\:transition-all {
+    @media (width >= 20rem) {
+      &::before {
+        content: var(--tw-content);
+        transition-property: all;
+        transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+        transition-duration: var(--tw-duration, var(--default-transition-duration));
+      }
+    }
+  }
+  .mobile\:before\:duration-500 {
+    @media (width >= 20rem) {
+      &::before {
+        content: var(--tw-content);
+        --tw-duration: 500ms;
+        transition-duration: 500ms;
+      }
+    }
+  }
+  .mobile\:before\:ease-in-out {
+    @media (width >= 20rem) {
+      &::before {
+        content: var(--tw-content);
+        --tw-ease: var(--ease-in-out);
+        transition-timing-function: var(--ease-in-out);
+      }
+    }
+  }
+  .mobile\:before\:content-\[\'\'\] {
+    @media (width >= 20rem) {
+      &::before {
+        content: var(--tw-content);
+        --tw-content: '';
+        content: var(--tw-content);
+      }
+    }
+  }
+  .mobile\:hover\:bg-primary {
+    @media (width >= 20rem) {
+      &:hover {
+        @media (hover: hover) {
+          background-color: var(--color-primary);
+        }
+      }
+    }
+  }
+  .mobile\:hover\:before\:scale-100 {
+    @media (width >= 20rem) {
+      &:hover {
+        @media (hover: hover) {
+          &::before {
+            content: var(--tw-content);
+            --tw-scale-x: 100%;
+            --tw-scale-y: 100%;
+            --tw-scale-z: 100%;
+            scale: var(--tw-scale-x) var(--tw-scale-y);
+          }
+        }
+      }
+    }
+  }
   .sm\:flex-col {
     @media (width >= 40rem) {
       flex-direction: column;
@@ -862,6 +1066,11 @@
   .sm\:gap-\[10px\] {
     @media (width >= 40rem) {
       gap: 10px;
+    }
+  }
+  .md\:static {
+    @media (width >= 48rem) {
+      position: static;
     }
   }
   .md\:col-span-1 {
@@ -882,6 +1091,11 @@
   .md\:mt-\[500px\] {
     @media (width >= 48rem) {
       margin-top: 500px;
+    }
+  }
+  .md\:hidden {
+    @media (width >= 48rem) {
+      display: none;
     }
   }
   .md\:w-\[400px\] {
@@ -909,6 +1123,16 @@
       flex-direction: column;
     }
   }
+  .md\:flex-row {
+    @media (width >= 48rem) {
+      flex-direction: row;
+    }
+  }
+  .md\:items-center {
+    @media (width >= 48rem) {
+      align-items: center;
+    }
+  }
   .md\:justify-center {
     @media (width >= 48rem) {
       justify-content: center;
@@ -934,6 +1158,21 @@
       gap: 153px;
     }
   }
+  .md\:bg-transparent {
+    @media (width >= 48rem) {
+      background-color: transparent;
+    }
+  }
+  .md\:px-0 {
+    @media (width >= 48rem) {
+      padding-inline: calc(var(--spacing) * 0);
+    }
+  }
+  .md\:py-0 {
+    @media (width >= 48rem) {
+      padding-block: calc(var(--spacing) * 0);
+    }
+  }
   .md\:text-start {
     @media (width >= 48rem) {
       text-align: start;
@@ -942,6 +1181,119 @@
   .md\:text-\[18px\] {
     @media (width >= 48rem) {
       font-size: 18px;
+    }
+  }
+  .md\:before\:absolute {
+    @media (width >= 48rem) {
+      &::before {
+        content: var(--tw-content);
+        position: absolute;
+      }
+    }
+  }
+  .md\:before\:bottom-\[-5px\] {
+    @media (width >= 48rem) {
+      &::before {
+        content: var(--tw-content);
+        bottom: -5px;
+      }
+    }
+  }
+  .md\:before\:left-0 {
+    @media (width >= 48rem) {
+      &::before {
+        content: var(--tw-content);
+        left: calc(var(--spacing) * 0);
+      }
+    }
+  }
+  .md\:before\:h-\[3px\] {
+    @media (width >= 48rem) {
+      &::before {
+        content: var(--tw-content);
+        height: 3px;
+      }
+    }
+  }
+  .md\:before\:w-full {
+    @media (width >= 48rem) {
+      &::before {
+        content: var(--tw-content);
+        width: 100%;
+      }
+    }
+  }
+  .md\:before\:scale-0 {
+    @media (width >= 48rem) {
+      &::before {
+        content: var(--tw-content);
+        --tw-scale-x: 0%;
+        --tw-scale-y: 0%;
+        --tw-scale-z: 0%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
+    }
+  }
+  .md\:before\:transition-all {
+    @media (width >= 48rem) {
+      &::before {
+        content: var(--tw-content);
+        transition-property: all;
+        transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+        transition-duration: var(--tw-duration, var(--default-transition-duration));
+      }
+    }
+  }
+  .md\:before\:duration-500 {
+    @media (width >= 48rem) {
+      &::before {
+        content: var(--tw-content);
+        --tw-duration: 500ms;
+        transition-duration: 500ms;
+      }
+    }
+  }
+  .md\:before\:ease-in-out {
+    @media (width >= 48rem) {
+      &::before {
+        content: var(--tw-content);
+        --tw-ease: var(--ease-in-out);
+        transition-timing-function: var(--ease-in-out);
+      }
+    }
+  }
+  .md\:before\:content-\[\'\'\] {
+    @media (width >= 48rem) {
+      &::before {
+        content: var(--tw-content);
+        --tw-content: '';
+        content: var(--tw-content);
+      }
+    }
+  }
+  .md\:hover\:font-medium {
+    @media (width >= 48rem) {
+      &:hover {
+        @media (hover: hover) {
+          --tw-font-weight: var(--font-weight-medium);
+          font-weight: var(--font-weight-medium);
+        }
+      }
+    }
+  }
+  .md\:hover\:before\:scale-100 {
+    @media (width >= 48rem) {
+      &:hover {
+        @media (hover: hover) {
+          &::before {
+            content: var(--tw-content);
+            --tw-scale-x: 100%;
+            --tw-scale-y: 100%;
+            --tw-scale-z: 100%;
+            scale: var(--tw-scale-x) var(--tw-scale-y);
+          }
+        }
+      }
     }
   }
   .lg\:mt-\[80px\] {

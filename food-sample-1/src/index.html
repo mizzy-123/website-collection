@@ -11,59 +11,62 @@
     </head>
     <body class="bg-white">
         <header
-            class="fixed z-[100] flex h-[108px] w-full items-center bg-transparent px-[10%]"
+            class="fixed top-0 left-0 z-[100] flex h-[108px] w-full items-center bg-transparent px-[10%]"
             id="header"
         >
             <img src="/public/logo/logo.png" alt="" width="185" />
-            <div class="flex w-full items-center justify-center">
-                <ul class="mobile:hidden items-center gap-[37px] lg:flex">
-                    <li>
-                        <a href="#"
-                            ><p
-                                class="font-readex before:bg-primary relative z-10 text-[22px] font-light transition-all duration-300 ease-in-out before:absolute before:bottom-[-5px] before:left-0 before:h-[3px] before:w-full before:scale-0 before:transition-all before:duration-500 before:ease-in-out before:content-[''] hover:font-medium hover:before:scale-100"
-                            >
-                                Home
-                            </p></a
-                        >
-                    </li>
-                    <li>
-                        <a href="#"
-                            ><p
-                                class="font-readex before:bg-primary relative z-10 text-[22px] font-light transition-all duration-300 ease-in-out before:absolute before:bottom-[-5px] before:left-0 before:h-[3px] before:w-full before:scale-0 before:transition-all before:duration-500 before:ease-in-out before:content-[''] hover:font-medium hover:before:scale-100"
-                            >
-                                Menu
-                            </p></a
-                        >
-                    </li>
-                    <li>
-                        <a href="#"
-                            ><p
-                                class="font-readex before:bg-primary relative z-10 text-[22px] font-light transition-all duration-300 ease-in-out before:absolute before:bottom-[-5px] before:left-0 before:h-[3px] before:w-full before:scale-0 before:transition-all before:duration-500 before:ease-in-out before:content-[''] hover:font-medium hover:before:scale-100"
-                            >
-                                How it works
-                            </p></a
-                        >
-                    </li>
-                    <li>
-                        <a href="#"
-                            ><p
-                                class="font-readex before:bg-primary relative z-10 text-[22px] font-light transition-all duration-300 ease-in-out before:absolute before:bottom-[-5px] before:left-0 before:h-[3px] before:w-full before:scale-0 before:transition-all before:duration-500 before:ease-in-out before:content-[''] hover:font-medium hover:before:scale-100"
-                            >
-                                About
-                            </p></a
-                        >
-                    </li>
-                    <li>
-                        <a href="#"
-                            ><p
-                                class="font-readex before:bg-primary relative z-10 text-[22px] font-light transition-all duration-300 ease-in-out before:absolute before:bottom-[-5px] before:left-0 before:h-[3px] before:w-full before:scale-0 before:transition-all before:duration-500 before:ease-in-out before:content-[''] hover:font-medium hover:before:scale-100"
-                            >
-                                Contact
-                            </p></a
-                        >
-                    </li>
-                </ul>
-            </div>
+            <nav
+                id="navbar"
+                class="mobile:flex-col mobile:absolute mobile:top-[100%] mobile:left-0 mobile:items-start mobile:px-[10%] mobile:py-[1rem] mobile:bg-white mobile:hidden flex w-full justify-center gap-[37px] md:static md:flex-row md:items-center md:bg-transparent md:px-0 md:py-0 lg:flex"
+            >
+                <a href="#"
+                    ><p
+                        class="font-readex mobile:before:bg-primary mobile:hover:bg-primary relative z-10 text-[22px] font-light transition-all duration-300 ease-in-out md:before:absolute md:before:bottom-[-5px] md:before:left-0 md:before:h-[3px] md:before:w-full md:before:scale-0 md:before:transition-all md:before:duration-500 md:before:ease-in-out md:before:content-[''] md:hover:font-medium md:hover:before:scale-100"
+                    >
+                        Home
+                    </p></a
+                >
+
+                <a href="#"
+                    ><p
+                        class="font-readex mobile:before:bg-primary mobile:hover:bg-primary relative z-10 text-[22px] font-light transition-all duration-300 ease-in-out md:before:absolute md:before:bottom-[-5px] md:before:left-0 md:before:h-[3px] md:before:w-full md:before:scale-0 md:before:transition-all md:before:duration-500 md:before:ease-in-out md:before:content-[''] md:hover:font-medium md:hover:before:scale-100"
+                    >
+                        Menu
+                    </p></a
+                >
+
+                <a href="#"
+                    ><p
+                        class="font-readex mobile:before:bg-primary mobile:hover:bg-primary relative z-10 text-[22px] font-light transition-all duration-300 ease-in-out md:before:absolute md:before:bottom-[-5px] md:before:left-0 md:before:h-[3px] md:before:w-full md:before:scale-0 md:before:transition-all md:before:duration-500 md:before:ease-in-out md:before:content-[''] md:hover:font-medium md:hover:before:scale-100"
+                    >
+                        How it works
+                    </p></a
+                >
+
+                <a href="#"
+                    ><p
+                        class="font-readex mobile:before:bg-primary mobile:hover:bg-primary relative z-10 text-[22px] font-light transition-all duration-300 ease-in-out md:before:absolute md:before:bottom-[-5px] md:before:left-0 md:before:h-[3px] md:before:w-full md:before:scale-0 md:before:transition-all md:before:duration-500 md:before:ease-in-out md:before:content-[''] md:hover:font-medium md:hover:before:scale-100"
+                    >
+                        About
+                    </p></a
+                >
+
+                <a href="#"
+                    ><p
+                        class="font-readex mobile:before:bg-primary mobile:hover:bg-primary relative z-10 text-[22px] font-light transition-all duration-300 ease-in-out md:before:absolute md:before:bottom-[-5px] md:before:left-0 md:before:h-[3px] md:before:w-full md:before:scale-0 md:before:transition-all md:before:duration-500 md:before:ease-in-out md:before:content-[''] md:hover:font-medium md:hover:before:scale-100"
+                    >
+                        Contact
+                    </p></a
+                >
+            </nav>
+            <a
+                id="open-navbar"
+                class="mobile:block flex w-full text-end md:hidden"
+                href="#"
+            >
+                <i class="bx bx-menu bx-md"></i>
+                <!-- <i class='bx bx-x'></i> -->
+            </a>
         </header>
 
         <!-- Main content -->
@@ -673,7 +676,7 @@
                             <p
                                 class="font-readex text-center text-[14px] font-bold"
                             >
-                                Sign Up
+                                Order Now
                             </p>
                         </a>
                     </div>
@@ -804,7 +807,7 @@
                 </div>
             </div>
             <div class="mt-[91px] h-[1px] w-full bg-[#1D1D1D]"></div>
-            <p class="font-readex mt-[46px] text-[16px]">
+            <p class="font-readex mt-[46px] text-center text-[16px]">
                 © 2025 Manifestasi. ALL RIGHT RESERVED.
             </p>
         </footer>

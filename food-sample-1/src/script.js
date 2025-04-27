@@ -1,8 +1,38 @@
 const header = document.getElementById("header");
+const navbar = document.getElementById("navbar");
+const openNavbar = document.getElementById("open-navbar");
+
+const menuNavbar = document.querySelector("#open-navbar i");
+
+// Logic open navbar
+openNavbar.addEventListener("click", function (e) {
+    e.preventDefault(); // biar gak reload karena href="#"
+
+    const icon = openNavbar.querySelector("i");
+
+    if (icon.classList.contains("bx-menu")) {
+        // Ganti jadi "X"
+        icon.classList.remove("bx-menu");
+        icon.classList.add("bx-x");
+    } else {
+        // Balikin ke "Menu"
+        icon.classList.remove("bx-x");
+        icon.classList.add("bx-menu");
+    }
+
+    navbar.classList.toggle("mobile:hidden");
+});
 
 // Sticky navbar
 window.onscroll = () => {
     header.classList.toggle("navbar-sticky", window.scrollY > 80);
+
+    if (menuNavbar.classList.contains("bx-x")) {
+        // Balikin ke "Menu"
+        menuNavbar.classList.remove("bx-x");
+        menuNavbar.classList.add("bx-menu");
+        navbar.classList.toggle("mobile:hidden");
+    }
 };
 
 const scrollContainer = document.getElementById("scrollContainer");
