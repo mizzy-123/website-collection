@@ -45,4 +45,8 @@
     .scrollbar-none::-webkit-scrollbar {
         display: none; /* Chrome, Safari, Opera */
     }
+
+    .banner-img {
+        background: url("/public/decoration/banner.png");
+    }
 }
