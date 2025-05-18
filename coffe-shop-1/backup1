@@ -1,0 +1,40 @@
+<section class="w-full h-[100vh] px-[1%] mt-[126px]">
+            <p
+                class="font-outfit-regular font-semibold lg:text-[97px] mobile:text-[50px] w-full text-center"
+            >
+                Embrace the Warmth of Kopi Hening
+            </p>
+            <div
+                class="flex lg:flex-row flex-wrap lg:flex-nowrap mobile:flex-col gap-[43px] mt-[75px] w-full justify-center lg:px-0 md:px-[20%]"
+            >
+                <div class="w-full lg:w-1/2">
+                    <img
+                        src="/public/image/kopi-1.png"
+                        alt=""
+                        class="rounded-[13px] object-fill"
+                    />
+                </div>
+
+                <div
+                    class="bg-[#43523A] rounded-[8px] w-full lg:w-1/2 flex flex-col justify-center px-[8%] py-[8%]"
+                >
+                    <p
+                        class="font-outfit-regular text-[52px] text-text-color-4 font-semibold"
+                    >
+                        Indulge in the Perfect Cup of Coffee
+                    </p>
+                    <p
+                        class="font-lato-regular text-[19px] font-bold text-text-color-5 mt-[40px]"
+                    >
+                        Elevate Your Taste Buds with Our Artisanal Blends,
+                        Crafted with Passion and Expertise
+                    </p>
+                    <a
+                        href="#"
+                        class="lg:w-[197px] mobile:w-full h-[62px] rounded-[62px] mt-[47px] bg-pink-color-3 text-text-color-6 flex justify-center items-center"
+                    >
+                        Explore Our Menu
+                    </a>
+                </div>
+            </div>
+        </section>

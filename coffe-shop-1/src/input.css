@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "latoRegular";
+    src: url("../public/font/lato/Lato-Regular.ttf");
+}
+
+@font-face {
+    font-family: "outfitRegular";
+    src: url("../public/font/outfit/Outfit-Regular.ttf");
+}
+
+@theme {
+    --breakpoint-mobile: 20rem;
+    --font-lato-regular: "latoRegular", sans-serif;
+    --font-outfit-regular: "outfitRegular", sans-serif;
+    --color-background-color-1: #46533e;
+    --color-pink-color-1: #fcf0e1;
+    --color-pink-color-2: #fcf0e2;
+    --color-pink-color-3: #fdeee3;
+    --color-pink-color-4: #f3dac0;
+    --color-text-color-1: #89807c;
+    --color-text-color-2: #bebcb5;
+    --color-text-color-3: #ebd1c3;
+    --color-text-color-4: #fefcf8;
+    --color-text-color-5: #ced1c6;
+    --color-text-color-6: #94918b;
+    --color-text-color-7: #fce5d2;
+    --color-text-color-8: #f9dcc7;
+    --color-text-color-9: #67564c;
+    --color-text-color-10: #837c74;
+    --color-text-color-11: #e2e1de;
+    --color-text-color-12: #f28d4c;
+    --color-text-color-13: #534d49;
+    --color-text-color-14: #c4c7b4;
+}

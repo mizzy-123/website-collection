@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="./output.css" rel="stylesheet" />
+    </head>
+    <body>
+        <header
+            class="w-full fixed top-0 left-0 h-[70px] bg-pink-color-1 flex justify-between items-center px-[10%]"
+        >
+            <img src="/public/logo/logo.png" width="180" alt="" />
+            <nav class="flex gap-[30px] items-center">
+                <a href="#">
+                    <p class="font-lato-regular text-[16px] text-text-color-1">
+                        Home
+                    </p>
+                </a>
+                <a href="#">
+                    <p class="font-lato-regular text-[16px] text-text-color-1">
+                        About
+                    </p>
+                </a>
+                <a href="font-lato-regular text-[16px] text-text-color-1">
+                    <p class="font-lato-regular text-[16px] text-text-color-1">
+                        About
+                    </p>
+                </a>
+                <a href="#">
+                    <p class="font-lato-regular text-[16px] text-text-color-1">
+                        Menu
+                    </p>
+                </a>
+                <a
+                    href="#"
+                    class="w-[95px] h-[40px] rounded-[60px] bg-[#010101] flex justify-center items-center"
+                >
+                    <p
+                        class="font-lato-regular font-semibold text-text-color-2 text-[16px]"
+                    >
+                        Visit Us
+                    </p>
+                </a>
+            </nav>
+        </header>
+        <section
+            class="w-full h-[100vh] bg-[url(/public/image/hero-image.png)] bg-cover bg-center flex flex-col justify-center items-center"
+        >
+            <h1 class="font-outfit-regular text-[100px] text-white text-center">
+                Discover the Aroma of Kopi Manifestasi
+            </h1>
+            <h1
+                class="text-text-color-3 font-outfit-regular text-[43px] font-semibold"
+            >
+                Sip, Savor, and Savor the Moment
+            </h1>
+        </section>
+    </body>
+</html>
